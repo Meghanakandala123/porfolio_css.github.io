@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Contact_details</title>
+   <link rel="icon" href="HTML5_logo_and_wordmark.svg.png">
+   <style>
+     h2{
+         background-color:burlywood;
+         border: 2px solid red;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         color:cadetblue;
+         text-shadow: 2px 1px 3px  hwb(175 50% 0%);
+         width: 50%;
+         height: 10%;
+      }
+      div.form{
+         padding: 10px 20px;
+         border-radius: 10px;
+         background:linear-gradient(dodgerblue,white,purple);
+         margin-left: auto;
+         margin-right: auto;
+         width: 40%;
+         height:auto;
+      }
+      input{
+         font-size: 25px;
+         border-radius: 10px;
+         border: 1px solid gray;  
+      }
+      label{
+         font-size: 26px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      #m{
+         background-color: aqua;
+         border: 5px ridge red;
+         border-radius: 7px;
+         font-size: 29px;
+      }
+      body{
+         background:linear-gradient(pink,cyan);
+      }
+   </style>
+</head>
+<body>
+   <div class="form">
+      <form action="message.html">
+        <h2>CONTACT FORM</h2>
+        <center>
+        <label for="">FirstName</label>
+        <input type="text" id="fname" pattern="[a-zA-Z]{3,8}" required name="fname"><br><br>
+        <label for="">LastName</label>
+        <input type="text" id="lname" pattern="[a-zA-Z]{3,8}" name="lname"><br><br>
+        <label for="">Email-id </label>
+        <input type="email" id="email" pattern="[^a-zA-Z0-9_.-@a-zA-Z0-9.-$]" name="email" required><br><br>
+        <label for="">Mobile.no</label>
+        <input type="tel" id="mn" pattern="[6-9]{1}[0-9]{9}" name="mn" required><br><br>
+        <label for="">DOB</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" id="M">Male<input type="radio" name="gender" id="F">Female<br><br>
+        <label>Addresss</label>
+        <textarea name="" id="" cols="30" rows="3">
+        </textarea><br><br>
+        <input id="m" type="Submit">
+      </center>
+</form>
+   </div>
+</body>
+</html>
